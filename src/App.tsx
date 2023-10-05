@@ -8,7 +8,8 @@ function App() {
 
 	return (
 		<>
-			<div className="App">
+			<div className="App container mx-auto p-6">
+				<h3 className="text-center p-6 text-2xl">Todos</h3>
 				<AddTodo />
 				<Todos />
 			</div>

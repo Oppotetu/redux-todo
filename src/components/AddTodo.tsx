@@ -18,7 +18,7 @@ function AddTodo() {
 	}
 	return (
 		<>
-			<form onSubmit={addTodoHandler} className="space-x-3 mt-12">
+			<form onSubmit={addTodoHandler} className="space-x-3 w-max p-6 mx-auto">
 				<input
 					type="text"
 					value={input}

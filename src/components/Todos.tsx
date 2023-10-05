@@ -11,12 +11,11 @@ function Todos() {
 
 	return (
 		<>
-			<h3>Todos</h3>
-			<ul className="list-none">
+			<ul className="list-none space-y-2 p-6">
 				{todos.map((todo) => (
 					<li
 						key={todo.id}
-						className="mt-4 flex justify-between items-center px-4 py-2 rounded"
+						className="flex justify-between border-2 p-2 rounded"
 					>
 						<div className="bg-white-500">{todo.text}</div>
 						<button
