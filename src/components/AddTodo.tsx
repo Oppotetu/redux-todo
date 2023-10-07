@@ -1,6 +1,7 @@
 import { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addTodo } from '../features/todo/todoSlice'
+import { Button, Input, OutlinedInput } from '@mui/material'
 
 function AddTodo() {
 	const [input, setInput] = useState('')
@@ -19,18 +20,15 @@ function AddTodo() {
 	return (
 		<>
 			<form onSubmit={addTodoHandler} className="space-x-3 w-max p-6 mx-auto">
-				<input
+				<OutlinedInput
 					type="text"
 					value={input}
 					onChange={(event) => setInput(event.target.value)}
-					className="bg-gray-800 rounded border border-gray-700"
+					// className="bg-gray-500"
 				/>
-				<button
-					type="submit"
-					className="text-white bg-indigo-500 border-0 py-2 px-6"
-				>
-					Add todo
-				</button>
+				<Button type="submit" variant="contained">
+					Add Todo
+				</Button>
 			</form>
 		</>
 	)
