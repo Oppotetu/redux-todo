@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addTodo } from '../features/todo/todoSlice'
-import { Button, Input, OutlinedInput } from '@mui/material'
+import { Button, OutlinedInput } from '@mui/material'
 
 function AddTodo() {
 	const [input, setInput] = useState('')

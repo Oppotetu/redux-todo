@@ -2,13 +2,7 @@ import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { removeTodo } from '../features/todo/todoSlice'
 import { selectTodos } from '../features/todo/todoSlice'
-import {
-	Button,
-	List,
-	ListItem,
-	ListItemButton,
-	ListItemText,
-} from '@mui/material'
+import { Button, List, ListItem, ListItemText } from '@mui/material'
 
 function Todos() {
 	const todos = useSelector(selectTodos)
